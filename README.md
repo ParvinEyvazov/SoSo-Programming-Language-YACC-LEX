@@ -1,5 +1,8 @@
 #  SoSo  Programming Language 
 
+Project group members: Parvin Eyvazov
+Name of your programming language : SoSo
+
 ## What is SoSo for?
 This language is for Cryptography. 
 There are 3 main Variable in the language:
@@ -15,13 +18,25 @@ cryptography(INTEGER);
 Program uses "cryptography()" function. This is a default function. (It called "CRYPTOGRAPHY" in lexical analyasis.)
 
 ## How It works?
-Firstly run the Makefile
+
 ```bash
-first@computer$  ls
-Makefile   myfile.so   soso.l
-first@computer$  make
-lex soso.l
-gcc lex.yy.c
+computer$  ls
+soso.l   soso.l
+
+computer$  lex soso.l
+computer$  ls
+lex.yy.c soso.l   soso.l
+
+computer$  yacc -d soso.y
+computer$  ls
+lex.yy.c  soso.l  soso.l  y.tab.c  y.tab.h
+
+
+computer$  gcc  lex.yy.c  y.tab.c -ll
+computer$  ./a.out
+
+begin
+
 ```
 
 Then a.out file has been created
