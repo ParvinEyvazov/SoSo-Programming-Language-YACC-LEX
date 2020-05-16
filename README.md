@@ -135,7 +135,7 @@ statement: exp ';'{$$=$1;}
         |exit_command {exit(0);}
         ;
 ```
-
+## Error
 Using yyerror in the YACC, SoSo can handle the errors.
 ```bash
 //show error
