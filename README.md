@@ -136,7 +136,19 @@ statement: exp ';'{$$=$1;}
         ;
 ```
 
-
+Using yyerror in the YACC, SoSo can handle the errors.
+```bash
+//show error
+void yyerror(char *s) {
+        fprintf(stderr, "%s\n", s);
+        }
+        
+        int main()
+        {       yyparse();
+                yylex();
+             return 0;
+        }
+```
 
 
 
