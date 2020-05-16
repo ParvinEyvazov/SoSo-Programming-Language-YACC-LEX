@@ -149,6 +149,52 @@ void yyerror(char *s) {
              return 0;
         }
 ```
+ 
+ ## YACC Design
+Everything start from function. Function can be statement.
+```bash
+func:func statement
+        |statement 
+        ;
+```
+
+Statement can be :
+```bash
+statement: exp ';'
+        |CHAR '=' exp ';'
+        |print
+        |cryptography
+        |while
+        |if
+        |exit_command
+        ;
+```
+Exp can be:
+```bash
+exp:
+        exp ADD term 
+        |exp SUBTRACT term 
+        |term 
+        ;
+```
+
+Term can be:
+```bash
+term:
+        term MULTIPLY factor
+        |term DIVIDE factor
+        |factor
+        ;
+```
+
+Factor can be
+```bash
+factor:
+        '(' exp ')'
+        |CHAR 
+        |DIGITS
+        ;
+```
 
 
 
