@@ -215,13 +215,6 @@ condition:
          ;
 ```
 
-
-
-
-
-
-
-
 ## BNF
 Let`s see some examples.
 
