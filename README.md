@@ -100,6 +100,32 @@ Output will be
 ```bash
 printing : 1
 ```
+LEX part of IF statement.
+```bash
+if              return IF;
+```
+
+YACC part of IF statement.
+```bash
+if:
+        IF '(' conditions ')' '{' statement '}' {if($3==1)$$=$6;}
+        |IF '(' conditions ')' '{' statement '}' ELSE'{' statement '}' {if($3==1)$$=$6; else $$=$10;}
+        ;
+```
+
+## Loops 
+As loops, SoSo has while loop.
+
+
+
+
+
+
+
+
+
+
+
 
 ## BNF
 Let`s see some examples.
