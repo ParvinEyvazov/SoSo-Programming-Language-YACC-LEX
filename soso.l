@@ -14,6 +14,8 @@ alf [a-zA-Z]+
 
 
 %%
+"//".*			{/* consume //-comment */}
+
 begin           return START;
 end             return END;
 "print"     return PRINT;
