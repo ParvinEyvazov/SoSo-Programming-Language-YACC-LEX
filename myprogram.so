@@ -1,5 +1,7 @@
 begin
+
 print(12+13);
+
 //assign a to true
 a=true;
 //assign b to true
@@ -8,6 +10,8 @@ while(a|b){
 //will work here
 print(12+60);
 }
+
+
 //comment line
 a=true;
 b=false;
@@ -15,4 +19,5 @@ if(a|b){
 //will work
 print(1);
 }
+
 end
