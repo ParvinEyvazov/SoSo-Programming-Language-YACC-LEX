@@ -84,7 +84,7 @@ Output will be
 printing : 1
 ```
 
-# OR
+## OR
 
 ```bash
 begin
