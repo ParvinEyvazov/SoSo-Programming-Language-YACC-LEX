@@ -77,27 +77,9 @@ Let`s see some examples.
 
 <if then else statement>::= if ( <expression> ) <statement no short if> else <statement>
 
-<switch statement> ::= switch ( <expression> ) <switch block>
-
-<switch block> ::= { <switch block statement groups>? <switch labels>? }
-
-<switch block statement groups> ::= <switch block statement group> | <switch block statement groups> <switch block statement group>
-
-<switch block statement group> ::= <switch labels> <block statements>
-
-<switch labels> ::= <switch label> | <switch labels> <switch label>
-
-<switch label> ::= case <constant expression> : | default :
-
 <while statement> ::= while ( <expression> ) <statement>
 
 <while statement no short if> ::= while ( <expression> ) <statement no short if>.
-
-<for statement> ::= for ( <for init>? ; <expression>? ; <for update>? ) <statement>
-
-<for statement no short if> ::= for ( <for init>? ; <expression>? ; <for update>? ) <statement no short if>
-
-<boolean literal> ::= true | false
 
 <non zero digit> ::= 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
