@@ -1,6 +1,5 @@
 #  SoSo  Programming Language 
 
-# SoSo_Programming_Language
 ## What is SoSo for?
 This language is for Cryptography. 
 There are 3 main Variable in the language:
