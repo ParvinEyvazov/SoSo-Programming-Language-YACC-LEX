@@ -18,6 +18,7 @@ cryptography(INTEGER);
 Program uses "cryptography()" function. This is a default function. (It called "CRYPTOGRAPHY" in lexical analyasis.)
 
 ## How It works?
+I did not make any makefile. I wanted to show the steps one-by-one.
 
 ```bash
 computer$  ls
@@ -32,10 +33,10 @@ computer$  ls
 lex.yy.c  soso.l  soso.l  y.tab.c  y.tab.h
 
 computer$  gcc  lex.yy.c  y.tab.c -ll
-computer$  ./a.out
-begin
+computer$  ./a.out <myprogram.so
 
 ```
+"begin" is a keyword of starting program.
 
 Then a.out file has been created
 We have "myfile.so" file that contains my language codes.
