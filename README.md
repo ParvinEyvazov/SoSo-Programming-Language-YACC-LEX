@@ -55,6 +55,18 @@ There is some initial values like crypto_key, crypto_initial_value, crypto_last_
 Function CRYPTOGRAPHY take the assigning value and showed "encrypted" value.
 
 Also we can write comments using "//" and this written text is not going to readed by computer.
+For example:
+```bash
+begin
+a=97;
+//this is comment part
+print(a);
+end
+```
+Output will be
+```bash
+printing : 97
+```
 
 
 ## BNF
