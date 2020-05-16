@@ -116,7 +116,25 @@ if:
 ## Loops 
 As loops, SoSo has while loop.
 
+LEX part of WHILE statement.
+```bash
+while           return WHILE;
+```
 
+YACC part of WHILE statement.
+```bash
+while:
+        WHILE '(' conditions ')' '{' statement '}' {if($3==1)$$=$6;}
+        ;
+statement: exp ';'{$$=$1;}
+        |CHAR '=' exp ';'
+        |print
+        |cryptography
+        |while
+        |if
+        |exit_command {exit(0);}
+        ;
+```
 
 
 
