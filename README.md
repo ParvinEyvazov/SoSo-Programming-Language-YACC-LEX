@@ -196,6 +196,25 @@ factor:
         ;
 ```
 
+Also there are conditions. Conditions can be:
+```bash
+conditions:
+        condition
+        |condition AND conditions
+        |condition OR conditions
+        ;
+```
+and condition can be:
+```bash
+condition:
+         CHAR
+         |CHAR EQ CHAR
+         |CHAR NE CHAR
+         |CHAR LE CHAR
+         |CHAR GE CHAR
+         ;
+```
+
 
 
 
