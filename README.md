@@ -41,35 +41,21 @@ computer$  ./a.out <myprogram.so
 Then a.out file has been created
 We have "myfile.so" file that contains my language codes.
 
-## How to do Lexical Analysis?
-Start Analysing with using this "a.out" and "myfile.so".
-
+## Explaining ot the syntax of your language
+Program is starting with "begin" and stop or exit with "end" command.
 ```bash
-first@computer$  ./a.out <myfile.so
+begin
+.
+.
+.
+.
+end
 ```
+There is some initial values like crypto_key, crypto_initial_value, crypto_last_value, createRandomNumber.
+Function CRYPTOGRAPHY take the assigning value and showed "encrypted" value.
 
-## Example Result
-Let`s take some example code that written in this language.
+Also we can write comments using "//" and this written text is not going to readed by computer.
 
-```java
-while(done = true ){
-if(newCrypto == 30) {
- done = false;
-}
-newCrypto ++;
-}
-```
-
-This is the result of lexical analysis : 
-
-```bash
-WHILE_CASE PARANTHESES_LEFT Variable : done SIGN_EQUAL BOOLEAN_TRUE PARANTHESES_RIGHT CURLY_BRACKET_LEFT
-IF_CASE PARANTHESES_LEFT Variable : newCrypto SIGN_IS_EQUAL INTEGER PARANTHESES_RIGHT CURLY_BRACKET_LEFT
-Variable : done SIGN_EQUAL BOOLEAN_FALSE SEMICOLON
-CURLY_BRACKET_RIGHT
-Variable : newCrypto INCREASE_ONE SEMICOLON
-CURLY_BRACKET_RIGHT
-```
 
 ## BNF
 Let`s see some examples.
