@@ -35,7 +35,7 @@ statement: exp ';'{$$=$1;}
 print:
         PRINT '(' exp ')' ';' {printf("printing : %d\n", $3);}
         ;
-
+/*crypto function*/
 cryptography:
         CRYPTOGRAPHY '(' exp ')' ';' {printf("encrypted value : %d\n", $3);}
         ;
