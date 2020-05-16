@@ -31,10 +31,8 @@ computer$  yacc -d soso.y
 computer$  ls
 lex.yy.c  soso.l  soso.l  y.tab.c  y.tab.h
 
-
 computer$  gcc  lex.yy.c  y.tab.c -ll
 computer$  ./a.out
-
 begin
 
 ```
