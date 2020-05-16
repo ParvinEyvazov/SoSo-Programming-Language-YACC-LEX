@@ -1,16 +1,18 @@
 begin
 
 print(12+13);
-
 //assign a to true
 a=true;
+
+//Crypto function
+cryptography(5);
+
 //assign b to true
 b=false;
 while(a|b){
 //will work here
 print(12+60);
 }
-
 
 //comment line
 a=true;
