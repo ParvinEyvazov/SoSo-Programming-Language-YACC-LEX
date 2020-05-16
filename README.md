@@ -67,7 +67,22 @@ Output will be
 ```bash
 printing : 97
 ```
+## Conditional statements
 
+```bash
+begin
+//this is comment part
+a=true;
+b=true;
+if(a&b){
+print(1);
+}
+end
+```
+Output will be
+```bash
+printing : 1
+```
 
 ## BNF
 Let`s see some examples.
