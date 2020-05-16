@@ -68,13 +68,30 @@ Output will be
 printing : 97
 ```
 ## Conditional statements
-
+As a conditional statement SoSo has "If" statement.
 ```bash
 begin
-//this is comment part
+//AND in if statement
 a=true;
 b=true;
 if(a&b){
+print(1);
+}
+end
+```
+Output will be
+```bash
+printing : 1
+```
+
+# OR
+
+```bash
+begin
+//OR in if statement
+a=false;
+b=true;
+if(a|b){
 print(1);
 }
 end
